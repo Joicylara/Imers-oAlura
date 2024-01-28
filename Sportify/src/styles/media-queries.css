@@ -1,0 +1,42 @@
+@media screen and (max-width: 1015px) {
+    .header__search {
+        /* O !important serve para substitui qualquer outra declaração feita no CSS, onde quer que esteja na lista de declaração */
+      width: auto !important;   
+      display: none;
+    }
+  
+    
+  }
+  
+  @media screen and (min-width: 1016px) and (max-width: 1140px) {
+    .header__search {
+      width: auto !important;
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .playlist {
+      display: none;
+    }
+  
+    .playlist-container {
+    /* Ocupa toda a largura disponível */
+      width: 100%; 
+      /* Altura automática, ajusta conforme o conteúdo */
+      height: auto; 
+    }
+  
+    .sidebar {
+      width: 342px;
+    }
+  
+    .offer__list-item {
+      grid-template-columns: 1fr;
+    }
+  
+    .offer__scroll-container {
+      overflow-y: visible;
+    }
+  
+  }
