@@ -36,6 +36,7 @@ function displayResults(result){
 
 function hidePlaylists() {
     resultPlalist.classList.add("hidden");
+    console.log("testando");
   }
   
 
