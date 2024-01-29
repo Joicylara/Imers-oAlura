@@ -103,20 +103,22 @@
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px;
+  border: 0px;
 }
 
 /* HOVER */
 
 .header__search:hover {
-  border: 1px solid #fff;
+  border: 1px solid #1db954;
 }
 
-.header__login .subscribe:hover {
+
+.subscribe:hover {
   transform: scale(1.04);
   color: var(--text-base-light);
 }
 
-.header__login .login:hover {
+.login:hover {
   transform: scale(1.04);
 }
 
@@ -169,6 +171,11 @@
     gap: 16px;
     margin-bottom: 16px; 
     margin: 0 auto; 
+
+     display: grid;
+    gap: 16px;
+    grid-gap: 32px;
+    margin: 0 auto;
   
 }
 
@@ -341,5 +348,35 @@
   color: #6a6a6a;
   font-weight: 400;
   font-size: 0.875rem;
+}
+
+.play {
+  position: relative;
+}
+
+.play .fa-play {
+  position: absolute;
+  right: 10px;
+  top: 120px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  font-size: 14px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.artist-card:hover .play .fa-play {
+  opacity: 1;
+  transform: translateY(-20px);
+}
+
+.play .fa-play:hover {
+  padding: 20px;
+  cursor: pointer;
+}
+
+#result-artist {
+  padding: 20px 40px;
 }
 
